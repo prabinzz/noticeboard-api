@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const verify = require("../verifyToken")
-
-router.get("/", verify ,(req, res) => {
+const tracker = require("../tracker")
+router.get("/", [verify, tracker],(req, res) => {
     res.send("Notice Route");
 })
 
