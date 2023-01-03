@@ -19,7 +19,6 @@ app.use(cors());
 const loginRoute = require("./routes/login");
 const signupRoute = require("./routes/signup");
 const noticeRoute = require("./routes/notice");
-
 // route middlewares
 app.use("/login", loginRoute);
 app.use("/signup", signupRoute);
